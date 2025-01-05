@@ -6,14 +6,18 @@ setlocal
 
 if not defined IDASDK (
     echo IDASDK environment variable not set.
-    echo Also make sure ida-cmake is installed in IDASDK.
-    echo See: https://github.com/0xeb/ida-cmake
     goto :eof
 )
 
 if not exist %IDASDK%\include\idax\xkernwin.hpp (
     echo IDAX framework not properly installed in the IDA SDK folder.
-    echo See: https://github.com/0xeb/idax
+    echo See: https://github.com/ida-cmake/idax
+    goto :eof
+)
+
+if not exist %IDASDK%\ida-cmake\common.cmake (
+    echo ida-cmake not properly installed in the IDA SDK folder.
+    echo See: https://github.com/allthingsida/ida-cmake
     goto :eof
 )
 
