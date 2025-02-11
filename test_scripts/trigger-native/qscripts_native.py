@@ -1,4 +1,5 @@
 import time
+import idaapi
 
 # Give the linker time to finish flushing the binary
 time.sleep(1)

@@ -22,13 +22,13 @@ if not exist %IDASDK%\ida-cmake\common.cmake (
 )
 
 if "%1"=="clean" (
-    if exist build64 rmdir /s /q build64
+    if exist build rmdir /s /q build
     goto :eof
 )
 
-if not exist build64 cmake -B build64 -S . -A x64 -DEA64=YES
+if not exist build cmake -B build -S . -A x64 -DEA64=YES
 
-if "%1"=="build" cmake --build build64 --config Release
+if "%1"=="build" cmake --build build --config Release
 
 echo.
 echo All done!
