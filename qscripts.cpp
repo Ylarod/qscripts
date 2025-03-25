@@ -458,7 +458,7 @@ private:
 
             exec_ok = elang->compile_file(
                 script_file, 
-#if IDA_SDK_VERSION >= 900
+#if IDA_SDK_VERSION >= 850
                 nullptr,  // requested_namespace
 #endif
                 &errbuf);
