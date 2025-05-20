@@ -1,4 +1,4 @@
-# Snipper Manager Plugin for IDA
+# Snippet Manager Plugin for IDA
 
 This plugin for IDA provides a set of functionality for importing, exporting or deleting all snippets from IDA (Shift-F2 window).
 
