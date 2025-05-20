@@ -96,8 +96,8 @@ class snippet_manager_t:
             return False
 
         self.index.altdel(snippet.index)
-        snippet.netnode_idx = idaapi.BADNODE
         idaapi.netnode(snippet.netnode_idx).kill()
+        snippet.netnode_idx = idaapi.BADNODE
         return True
 
     def delete_all(self) -> None:
