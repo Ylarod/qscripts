@@ -151,7 +151,7 @@ Now, simply use your favorite IDE (or terminal) and build (or rebuild) the `hell
 
 The moment the compilation succeeds, the new binary will be detected (since it is the trigger file) then your active script will use IDA's `load_and_run_plugin()` to run the plugin again.
 
-Please check the [trigger-native](test_scripts/trigger-native/) example.
+Please check the native addons examples in [test_addons](test_addons/).
 
 # Building
 

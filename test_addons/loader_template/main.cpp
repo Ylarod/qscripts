@@ -95,7 +95,7 @@ bool main()
     auto fname = R"(C:\Users\elias\Projects\github\ida-qscripts\samples\chunk1.bin)";
     auto li = open_linput(fname, false);
 
-    if (!test_accept_file(fname))
+    if (!test_accept_file(li, fname))
         return false;
     
     load_file(li, 0, fname);
